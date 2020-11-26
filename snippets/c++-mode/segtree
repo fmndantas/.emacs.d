@@ -1,0 +1,27 @@
+# -*- mode: snippet -*-
+# name: segtree
+# key: segtree
+# --
+int Mid(int l, int r) {
+    return (l + r) / 2;
+}
+
+int Left(int v) {
+    return 2 * v;
+}
+
+int Right(int v) {
+    return 2 * v + 1;
+}
+
+void Build(int v, int l, int r) {
+
+}
+
+void Update(int v, int l, int r, int pos, int val) {
+
+}
+
+int Query(int v, int l, int r, int ql, int qr) {
+
+}

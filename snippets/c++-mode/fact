@@ -1,0 +1,18 @@
+# -*- mode: snippet -*-
+# name: fact
+# key: fact
+# --
+unordered_map<int, int> fact(int n) {
+  unordered_map<int, int> f;
+  for (int d = 2; d * d <= n; ++d) {
+    while (n % d == 0) {
+      f[d]++;
+      n /= d;
+    }
+  }
+  // n is prime
+  if (n > 1) {
+    f[n]++;
+  }
+  return f;
+}

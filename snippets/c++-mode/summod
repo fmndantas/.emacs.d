@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: mod
+# key: mod
+# --
+long long summod(long long a, long long b) { return ((a % mod) + (b % mod)) % mod; }
+long long mulmod(long long a, long long b) { return ((a % mod) * (b % mod)) % mod; }
+long long divmod(long long a, long long b) { return ((a % mod) / (b % mod)) % mod; }
+long long submod(long long a, long long b) { return ((a % mod) - (b % mod)) % mod + mod; }

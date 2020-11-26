@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: inf
+# key: inf
+# --
+$1 inf = numeric_limits<$1>::max()
