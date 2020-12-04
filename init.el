@@ -1,3 +1,12 @@
+;; revert buffers automatically
+(global-auto-revert-mode t)
+
+;; sets font size to 11 px height
+(set-face-attribute 'default nil :height 120)
+
+;; shows matched bracket
+(show-paren-mode 1)
+
 ;; avoids initial screen
 (setq inhibit-startup-message t)
 
@@ -14,6 +23,9 @@
 (setq auto-save-default nil)
 (setq create-lockfiles nil)
 
+;; enables electric-mode to match pair of symbols
+(electric-pair-mode 1)
+
 ;; enables package and includes melpa on list of packages
 (require 'package)
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
@@ -28,6 +40,8 @@
 ;; sunrise-commander
 (add-to-list 'load-path "~/.emacs.d/plugins/sunrise-commander")
 (require 'sunrise)
+;; (require 'sunrise-popviewer)
+;; (sunrise-popviewer-mode 1)
 (add-to-list 'auto-mode-alist '("\\.srvm\\'" . sr-virtual-mode))
 (global-set-key (kbd "C-x C-f") 'sunrise-cd)
 
