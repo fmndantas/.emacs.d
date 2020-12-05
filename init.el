@@ -1,3 +1,16 @@
+;; C-x C-3 -> f5
+(global-set-key (kbd "<f5>") 'split-window-right)
+
+;; C-x O -> f6
+(global-set-key (kbd "<f6>") 'delete-window)
+
+;; C-x o -> f7
+(global-set-key (kbd "<f7>") 'windmove-left)
+
+;; C-x o -> f8
+(global-set-key (kbd "<f8>") 'windmove-right)
+
+
 ;; revert buffers automatically
 (global-auto-revert-mode t)
 
@@ -40,10 +53,13 @@
 ;; sunrise-commander
 (add-to-list 'load-path "~/.emacs.d/plugins/sunrise-commander")
 (require 'sunrise)
-;; (require 'sunrise-popviewer)
-;; (sunrise-popviewer-mode 1)
+
 (add-to-list 'auto-mode-alist '("\\.srvm\\'" . sr-virtual-mode))
 (global-set-key (kbd "C-x C-f") 'sunrise-cd)
+
+;; sunrise-commander popviewer-mode
+(require 'sunrise-popviewer)
+(sunrise-popviewer-mode 1)
 
 ;; matherial-theme
 (custom-set-variables
