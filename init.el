@@ -1,15 +1,14 @@
-;; C-x C-3 -> f5
-(global-set-key (kbd "<f5>") 'split-window-right)
-
-;; C-x O -> f6
-(global-set-key (kbd "<f6>") 'delete-window)
-
-;; C-x o -> f7
-(global-set-key (kbd "<f7>") 'windmove-left)
+;; C-x o -> M-2
+(global-set-key (kbd "M-2") 'windmove-left)
 
 ;; C-x o -> f8
-(global-set-key (kbd "<f8>") 'windmove-right)
+(global-set-key (kbd "M-3") 'windmove-right)
 
+;; C-x C-3 -> f5
+(global-set-key (kbd "M-1") 'split-window-right)
+
+;; C-x O -> f6
+(global-set-key (kbd "M-4") 'delete-window)
 
 ;; revert buffers automatically
 (global-auto-revert-mode t)
